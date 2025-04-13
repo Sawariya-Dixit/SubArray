@@ -20,7 +20,7 @@ public static void Print(int array[]) {
             // Update max and min
             if (sum > max) {
                 max = sum;
-            }o;
+            };
             if (sum < min) {
                 min = sum;
             }
