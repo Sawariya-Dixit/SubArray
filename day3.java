@@ -7,17 +7,20 @@ public class day3 {
          int  max = 0;
 
          for (int i = 0; i < arr.length; i++) {
-             if (buyStock<arr[i]) {
+             if (buyStock < arr[i]) {
                 
                  int profit  = arr[i]- buyStock;
                    
-                  if (max<profit) {
-                     max = profit;
-                  }
+                  // if (max<profit) {
+                  //    max = profit;
+                  // }
+                  max = Math.max(max, profit);
                   
                    
              }
-             else{
+
+             else
+             {
                 buyStock = arr[i];
              }
            
@@ -28,6 +31,6 @@ public class day3 {
   public static void main(String[] args) {
     int arr [] = {7, 1 , 5,  3, 6, 4};
         
-   System.out.println( sell(arr));
+   System.out.println("Profit is : " +sell(arr));
   }  
 }
