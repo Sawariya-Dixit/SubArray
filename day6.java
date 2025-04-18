@@ -3,7 +3,8 @@ public class day6 {
      
         public static void printArray(int arr []){
       
-   
+
+             // Pair Of SubArray //
             
            for (int i = 0; i < arr.length; i++) {
                   int currnet = arr[i];
