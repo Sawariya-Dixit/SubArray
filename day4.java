@@ -10,7 +10,7 @@ public class day4 {
 
 
 
-        //  ! left vali badi boundry //
+        // *  left vali badi boundry //
 
          int leftMax[] = new int [n];
          leftMax[0] = height[0];
@@ -19,9 +19,8 @@ public class day4 {
 
 
          }
-         
 
-            //! right vali boundry //
+            //   * Right vali boundry 
 
           int  rightMax [] = new int[n];
           rightMax[n-1] =  height[n-1];
