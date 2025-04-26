@@ -11,19 +11,19 @@ public class day14 {
         while (startRow <= endRow && startCol <= endCol) {
             
 
-            //Top 
+            //*Top 
               for (int j = startCol; j <=endCol; j++) {
                 System.out.print(matrix[startRow][j]+" ");
               }
 
-              // right
+              // *right
 
               for (int i = startRow+1; i <=endRow; i++) {
                 System.out.print(matrix[i][endCol]+" ");
               }
 
 
-              // bottom
+              //* bottom
 
               for (int j = endCol-1; j >=startCol; j--) {
                 if (startCol==endCol) {
@@ -34,7 +34,7 @@ public class day14 {
             
 
 
-               //left
+               //*left
               for (int i = endRow-1; i>=startCol+1; i--) {
                 if (startRow==endRow) {
                     break;
